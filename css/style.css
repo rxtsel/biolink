@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: calc(100vh - 15.4rem);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .title {
