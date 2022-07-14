@@ -29,6 +29,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: calc(100vh - 15.4rem);
+  overflow: hidden;
 }
 
 .title {
@@ -70,7 +71,7 @@ ul {
 
 ul > li {
   background-color: rgba(255, 255, 255, 0.34);
-  margin: 2.4rem 0;
+  margin: 1.5rem 0;
   backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   border-radius: 16rem;
