@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristhian Melo - Links</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/Favicon.svg" type="svg/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color1: 0xc8b6ff,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 1.00
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 700)
+    })
+  </script>
+</head>
+
+<body>
+  <div id="vanta"></div>
+  <main class="animated">
+    <header class="header">
+      <img src="img/profile.jpg" alt="puede ser una imagen de una persona con gorra gris mirando hacia un lado">
+      <h1 class="title">@rxtsel</h1>
+    </header>
+    <ul>
+      <li>
+        <a href="https://github.com/rxtsel">
+          <img src="/img/bx-home.svg" alt="puede ser un icono de una casa que indica el home">
+          Official Website
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/rxtsel">
+          <img src="/img/bxl-twitter.svg" alt="puede ser un icono del logo de twitter">
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/rxtsel">
+          <img src="/img/bxl-github.svg" alt="puede ser un icono del logo de github">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/rxtsel">
+          <img src="/img/bxl-instagram.svg" alt="puede ser un icono del logo de instagram">
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
