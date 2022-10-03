@@ -133,6 +133,12 @@ main.animated {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}
+
 .footer__href {
   text-decoration: none;
   color: #448BDD;
