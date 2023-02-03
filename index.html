@@ -1,94 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristhian Melo - Links</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/Favicon.svg" type="svg/x-icon" />
+    <meta name="description" content="rxtsel&#x27;s biolink" />
+    <meta name="author" content="rxtsel" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <meta name="twitter:title" content="Cristhian Melo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rxtsel" />
+    <meta name="twitter:creator" content="@rxtsel" />
+    <!-- <meta name="twitter:image" content="https://www.rxtsel.com/card.png" /> -->
+    <meta property="og:site_name" content="Cristhian Melo" />
+    <meta name="og:title" content="Cristhian Melo" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="https://www.rxtsel.com/card.png" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color1: 0xc8b6ff,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+        });
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristhian Melo - Links</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/Favicon.svg" type="svg/x-icon">
-  <meta name="description" content="rxtsel&#x27;s biolink" />
-  <meta name="author" content="rxtsel" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-  <meta name="twitter:title" content="Cristhian Melo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@rxtsel" />
-  <meta name="twitter:creator" content="@rxtsel" />
-  <!-- <meta name="twitter:image" content="https://www.rxtsel.com/card.png" /> -->
-  <meta property="og:site_name" content="Cristhian Melo" />
-  <meta name="og:title" content="Cristhian Melo" />
-  <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="https://www.rxtsel.com/card.png" /> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      VANTA.BIRDS({
-        el: "#vanta",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        backgroundAlpha: 0.0,
-        color1: 0xc8b6ff,
-        wingSpan: 40.00,
-        separation: 100.00,
-        alignment: 77.00,
-        cohesion: 5.00,
-        quantity: 1.00
-      })
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 700);
+      });
+    </script>
+  </head>
 
-      setTimeout(() => {
-        const main = document.querySelector('main')
-        main.style.opacity = 1
-        main.style.filter = 'blur(0px)'
-      }, 700)
-    })
-  </script>
-</head>
-
-<body>
-  <div id="vanta"></div>
-  <main class="animated">
-    <header class="header">
-      <img src="img/profile.webp" alt="puede ser una imagen de una persona con gorra gris mirando hacia un lado">
-      <h1 class="title">@rxtsel</h1>
-    </header>
-    <ul>
-      <li>
-        <a href="https://rxtsel.ml">
-          <img src="img/bx-home.svg" alt="puede ser un icono de una casa que indica el home">
-          Official Website
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/rxtsel">
-          <img src="img/bxl-twitter.svg" alt="puede ser un icono del logo de twitter">
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/rxtsel">
-          <img src="img/bxl-github.svg" alt="puede ser un icono del logo de github">
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://instagram.com/rxtsel">
-          <img src="img/bxl-instagram.svg" alt="puede ser un icono del logo de instagram">
-          Instagram
-        </a>
-      </li>
-    </ul>
-  </main>
-  <footer class="footer">
-      <p class="footer__text">© All right reserved | Made with ♥ by <a class="footer__href" href="https://twitter.com/rxtsel" target="_blank">@rxtsel</a></p>
-  </footer>
-</body>
-
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header class="header">
+        <img
+          src="img/profile.webp"
+          alt="puede ser una imagen de una persona con gorra gris mirando hacia un lado"
+        />
+        <h1 class="title">@rxtsel</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://rxtsel.dev">
+            <img
+              src="img/bx-home.svg"
+              alt="puede ser un icono de una casa que indica el home"
+            />
+            Official Website
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/rxtsel">
+            <img
+              src="img/bxl-twitter.svg"
+              alt="puede ser un icono del logo de twitter"
+            />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rxtsel">
+            <img
+              src="img/bxl-github.svg"
+              alt="puede ser un icono del logo de github"
+            />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/rxtsel">
+            <img
+              src="img/bxl-instagram.svg"
+              alt="puede ser un icono del logo de instagram"
+            />
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        © All right reserved | Made with ♥ by
+        <a
+          class="footer__href"
+          href="https://twitter.com/rxtsel"
+          target="_blank"
+          >@rxtsel</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
