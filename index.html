@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -44,8 +44,11 @@
 
         setTimeout(() => {
           const main = document.querySelector("main");
+          const footer = document.querySelector("footer");
           main.style.opacity = 1;
           main.style.filter = "blur(0px)";
+          footer.style.opacity = 1;
+          footer.style.filter = "blur(0px)";
         }, 700);
       });
     </script>
@@ -100,15 +103,15 @@
         </li>
       </ul>
     </main>
-    <footer class="footer">
+    <footer class="footer animated">
       <p class="footer__text">
-        © All right reserved | Made with ♥ by
+        © All right reserved. Made with ♥ by
         <a
           class="footer__href"
           href="https://twitter.com/rxtsel"
           target="_blank"
           >@rxtsel</a
-        >
+        >.
       </p>
     </footer>
   </body>
