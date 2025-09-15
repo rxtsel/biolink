@@ -4,22 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cristhian Melo - Links</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/Favicon.svg" type="svg/x-icon" />
+    <title>Cristhian Melo - Socials</title>
+    <link rel="shortcut icon" href="favicon.svg" type="svg/x-icon" />
     <meta name="description" content="rxtsel&#x27;s biolink" />
     <meta name="author" content="rxtsel" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <meta name="twitter:title" content="Cristhian Melo" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@rxtsel" />
     <meta name="twitter:creator" content="@rxtsel" />
-    <!-- <meta name="twitter:image" content="https://www.rxtsel.com/card.png" /> -->
     <meta property="og:site_name" content="Cristhian Melo" />
     <meta name="og:title" content="Cristhian Melo" />
     <meta property="og:type" content="website" />
-    <!-- <meta property="og:image" content="https://www.rxtsel.com/card.png" /> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
@@ -44,14 +39,161 @@
 
         setTimeout(() => {
           const main = document.querySelector("main");
-          const footer = document.querySelector("footer");
           main.style.opacity = 1;
           main.style.filter = "blur(0px)";
-          footer.style.opacity = 1;
-          footer.style.filter = "blur(0px)";
         }, 700);
       });
     </script>
+
+    <style>
+      :root {
+        --bg-color: #1d1d1d;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        background: url(bg.webp) no-repeat center center fixed;
+        background-size: cover;
+        background-position: bottom;
+        color: #fff;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        min-height: calc(100vh - 15.4rem);
+        overflow-x: hidden;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 1.4rem;
+        display: inline-block;
+        background: #000;
+        border-radius: 2.5rem;
+        margin-top: 1.5rem;
+        padding: 0.2rem 1rem;
+        border: 1px solid #f5f5f5;
+        font-weight: 400;
+      }
+
+      .header {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header > img {
+        width: 14rem;
+        border: 1px solid #f5f5f5;
+        border-radius: 100%;
+        max-width: 100%;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .header > img {
+          width: 12rem;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 3.2rem;
+        margin: 0 auto;
+        width: 48rem;
+        min-width: 90%;
+      }
+
+      @media (max-width: 768px) {
+        ul {
+          margin: 0 auto;
+          width: 100vw;
+          max-width: 50rem;
+        }
+      }
+
+      ul > li {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 1.5rem 0;
+        backdrop-filter: blur(20px);
+        border-radius: 16rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        font-size: 1.8rem;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1.8rem;
+        font-weight: 600;
+      }
+
+      ul > li:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      #vanta {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+      }
+
+      main.animated {
+        opacity: 0;
+        filter: blur(10px);
+        transition:
+          opacity 1s ease-in-out,
+          filter 1s ease-in-out;
+      }
+    </style>
   </head>
 
   <body>
@@ -59,7 +201,7 @@
     <main class="animated">
       <header class="header">
         <img
-          src="img/profile.webp"
+          src="profile.webp"
           alt="puede ser una imagen de una persona con gorra gris mirando hacia un lado"
         />
         <h1 class="title">@rxtsel</h1>
@@ -67,52 +209,61 @@
       <ul>
         <li>
           <a href="https://rxtsel.dev">
-            <img
-              src="img/bx-home.svg"
-              alt="puede ser un icono de una casa que indica el home"
-            />
-            Official Website
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/rxtsel">
-            <img
-              src="img/bxl-twitter.svg"
-              alt="puede ser un icono del logo de twitter"
-            />
-            Twitter
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#home"></use>
+            </svg>
+            Website
           </a>
         </li>
         <li>
           <a href="https://github.com/rxtsel">
-            <img
-              src="img/bxl-github.svg"
-              alt="puede ser un icono del logo de github"
-            />
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#github"></use>
+            </svg>
             GitHub
           </a>
         </li>
         <li>
+          <a href="https://linkedin.com/in/rxtsel">
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#linkedin"></use>
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/rxtsel">
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#x"></use>
+            </svg>
+            X
+          </a>
+        </li>
+        <li>
+          <a href="https://tiktok.com/@rxtsel">
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#tiktok"></use>
+            </svg>
+            TikTok
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/@rxtsel">
+            <svg class="icon" width="24" height="24">
+              <use href="./icons.svg#youtube"></use>
+            </svg>
+            YouTube
+          </a>
+        </li>
+        <li>
           <a href="https://instagram.com/rxtsel">
-            <img
-              src="img/bxl-instagram.svg"
-              alt="puede ser un icono del logo de instagram"
-            />
+            <svg class="icon" width="24" height="24">
+              <use href="icons.svg#instagram"></use>
+            </svg>
             Instagram
           </a>
         </li>
       </ul>
     </main>
-    <footer class="footer animated">
-      <p class="footer__text">
-        © All right reserved. Made with ♥ by
-        <a
-          class="footer__href"
-          href="https://twitter.com/rxtsel"
-          target="_blank"
-          >@rxtsel</a
-        >.
-      </p>
-    </footer>
   </body>
 </html>

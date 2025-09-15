@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 57 57">
+  <path fill="currentColor" d="M57 57H0L28.5 0l8.993 17.987-2.66 5.256-6.333-12.7-20.9 41.77h41.8L41.167 35.91l-6.334 12.667L28.5 35.913l-6.333 12.664-2.629-5.257L28.5 25.397l6.333 12.666 6.334-12.666L57 57Z"/>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      path { fill: white; }
+    }
+    @media (prefers-color-scheme: light) {
+      path { fill: black; }
+    }
+  </style>
+</svg>
